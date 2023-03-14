@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";
 import './theme/index.css'
-import Form from "./Form";
+import Form from "./components/Form";
 
 function App() {
   return (
