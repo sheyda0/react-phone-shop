@@ -4,6 +4,8 @@ body {
 
 ul {
   margin: 0 !important;
+  list-style-type: none;
+  padding: 0 !important;
 }
 
 header {
@@ -306,6 +308,58 @@ header {
   background-color: #F5F7FA;
   width: 100%;
   font-weight: 500;
+}
+
+footer {
+  background-color: #F6F9FC;
+  padding: 1rem 2rem 3rem 2rem;
+  margin-top: 2rem;
+}
+footer .title {
+  font-weight: 600;
+}
+footer li {
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #4b566b;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #144194;
+}
+
+.footer-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+}
+
+.footer-social div {
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  border: 1px solid rgba(0, 0, 0, 0.085);
+  border-radius: 0.4375rem;
+  width: 45%;
+  padding: 1rem;
+}
+.form .err {
+  font-size: 0.8rem;
+  color: red;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+}
+
+.form-submit-btn {
+  background-color: #144194 !important;
+  color: #fff !important;
+  padding: 0.5rem 4rem !important;
+  font-size: 1.1rem !important;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -24,9 +24,7 @@ export default function Products() {
                 <Link to={`/products/${product._id}`}>{product.title}</Link>
               </p>
               <p className="product-price">{formatCurrency(product.price)}</p>
-              <button className="product-btn btn btn-outline-primary btn-sm" onClick={() => {addCart(product._id)}}>
-                {product.add}
-              </button>
+              <button className="product-btn btn btn-outline-primary btn-sm" onClick={() => {addCart(product._id)}}>Add to cart</button>
             </div>
           </div>
         ))

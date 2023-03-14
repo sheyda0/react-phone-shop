@@ -49,9 +49,7 @@ export default function ProductDetails() {
                             <DetailsColor key={index} num={index} color={color} click={() => setIndex(index)} />
                         ))}
                     </div>
-                    <button className="product-details-btn btn btn-primary" onClick={() => addCart(product._id)}>
-                      {product.add}
-                    </button>
+                    <button className="product-details-btn btn btn-primary" onClick={() => addCart(product._id)}>Add to cart</button>
                 </div>
             </div>
         ))

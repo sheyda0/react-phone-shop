@@ -19,9 +19,7 @@ export const DataProvider = (props) => {
             });
             setCart([...cart, ...data]);
         }else{
-            cart.forEach(item => {
-                item.add = "in cart";
-            });
+            alert("This product is already in the cart");
             setCart([...cart]);
         }
     }

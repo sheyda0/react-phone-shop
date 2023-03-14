@@ -11,7 +11,6 @@ export const DATAPRODUCT = [
         "storage":["256 GB", "512 GB"],
         "price": 109900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "2",
@@ -25,7 +24,6 @@ export const DATAPRODUCT = [
         "storage":["64 GB", "128 GB"],
         "price": 16900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "3",
@@ -39,7 +37,6 @@ export const DATAPRODUCT = [
         "storage":["256 GB", "512 GB"],
         "price": 109900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "4",
@@ -53,7 +50,6 @@ export const DATAPRODUCT = [
         "storage":["128 GB", "256 GB"],
         "price": 65900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "5",
@@ -67,7 +63,6 @@ export const DATAPRODUCT = [
         "storage":["128 GB", "256 GB"],
         "price": 70900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "6",
@@ -81,7 +76,6 @@ export const DATAPRODUCT = [
         "storage":["128 GB", "256 GB"],
         "price": 62900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "7",
@@ -95,7 +89,6 @@ export const DATAPRODUCT = [
         "storage":["64 GB", "128 GB"],
         "price": 16900,
         "count": 1,
-        "add": "add to cart"
     },
     {
         "_id": "8",
@@ -109,6 +102,5 @@ export const DATAPRODUCT = [
         "storage":["128 GB", "256 GB"],
         "price": 27900,
         "count": 1,
-        "add": "add to cart"
     },
 ]

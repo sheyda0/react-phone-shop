@@ -16,7 +16,7 @@ export default function HeaderMenu() {
                 <Link to="/">Contact Us</Link>
             </li>
             <li>
-                <Link to="/">Sign Up / Sign In</Link>
+                <Link to="/signup">Sign Up / Sign In</Link>
             </li>
         </ul>
   )

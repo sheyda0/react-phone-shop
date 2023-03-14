@@ -1,8 +1,8 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {DataContext} from './context'
 import formatCurrency from '../util';
-import CartImage from './CartImage';
 import { HiOutlineTrash } from 'react-icons/hi'
+import CartPaymentItem from './CartPaymentItem';
 
 export default function Cart() {
 
@@ -24,7 +24,7 @@ export default function Cart() {
     }, [cart]);
 
     if(cart.length === 0) {
-      return <h4 style={{textAlign: 'center'}}>Your cart is empty!</h4>
+      return <h4 style={{textAlign: 'center', height: '50vh'}}>Your cart is empty!</h4>
     }
 
   return (
@@ -35,7 +35,9 @@ export default function Cart() {
             <div className="cart-container d-flex container mx-3" key={product._id}>
               <div className="cart d-flex ">
                 <div className="cart-img-container d-flex flex-column align-items-center">
-                <CartImage imageSrc={product.images[0]} />
+                <div className="cart-img d-flex align-items-center justify-content-center m-4 mb-3 py-2 px-5">
+                  <img src={product.images[0]} alt="" />
+                </div>
                 </div>
                 <div className="box-details">
                     <h6 className="cart-title h5">{product.title}</h6>
@@ -65,18 +67,9 @@ export default function Cart() {
       <div className="total d-flex flex-column align-items-start justify-content-start mx-5">
         <p className="total-title px-4 py-2">PAYMENT SUMMARY</p>
         <ul className="w-100 px-4 pb-3">
-          <li className="d-flex justify-content-between w-100">
-            <p>Subtotal</p>
-            <p>{formatCurrency(total)}</p>
-          </li>
-          <li className="d-flex justify-content-between w-100">
-            <p>Item Discount</p>
-            <p>-{formatCurrency(0)}</p>
-          </li>
-          <li className="d-flex justify-content-between w-100">
-            <p>Delivery Fee</p>
-            <p>Free</p>
-          </li>
+          <CartPaymentItem item="Subtotal" value={formatCurrency(total)} />
+          <CartPaymentItem item="Item Discount" value={formatCurrency(0)} />
+          <CartPaymentItem item="Delivery Fee" value="Free" />
         </ul>
       </div>
     </div>

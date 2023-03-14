@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";
 import './theme/index.css'
+import Form from "./Form";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/products" element={<Products/>} />
+            <Route path="/" element={<Products />} />
+            <Route path="/signup" element={<Form />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDetails />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
